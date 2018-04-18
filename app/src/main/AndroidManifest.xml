@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mg.studio.demoapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+
+        <activity android:name=".Lifecycle"/>
+        <activity android:name=".Activity_00"/>
+        <activity android:name=".Dialog_00"
+            android:theme="@style/Theme.AppCompat.Dialog"/>
+
+        <activity android:name=".UserName"/>
+
+        <activity
+            android:name=".UserName_Final"/>
+        <activity
+            android:name=".Layout"/>
+        <activity
+            android:name=".Layout_Final"/>
+        <activity
+            android:name=".Button_Design"/>
+        <activity
+            android:name=".Button_Toast"/>
+        <activity
+            android:name=".Button_Intent"/>
+        <activity
+            android:name=".Button_StartActivity"/>
+        <activity
+            android:name=".Button_StartActivity_extra"/>
+        <activity
+            android:name=".ImageButton"/>
+        <activity
+            android:name=".EditTextActivity"/>
+        <activity
+            android:name=".RadioButtons_listener"/>
+        <activity
+            android:name=".RadioButtons_onclick"/>
+        <activity
+            android:name=".listViewFinal"/>
+        <activity
+            android:name=".GetColor"/>
+        <activity
+            android:name=".GradientBackground"/>
+        <activity
+            android:name=".AppIntentCaller"/>
+        <activity
+            android:name=".AppIntentReceiver"/>
+        <activity
+            android:name=".Weather_App_Design"/>
+        <activity
+            android:name=".ListViewCustomAdapter"/>
+        <activity
+            android:name=".ListViewAcitivity"/>
+        <activity
+            android:name=".DataBase"/>
+        <activity
+            android:name=".FragmentOne"/>
+        <activity
+            android:name=".Webview"/>
+        <activity
+            android:name=".ServiceDemo"/>
+        <activity
+            android:name=".Service"/>
+        <activity
+            android:name=".Fingerprint"/>
+        <activity
+            android:name=".AppPrivateDirectory"/>
+        <activity
+            android:name=".AssetsFolder"/>
+        <activity
+            android:name=".IntentExtras"/>
+        <activity
+            android:name=".AudioRecorder"/>
+        <activity
+            android:name=".ActivityLinearLayout_03"/>
+        <activity
+            android:name=".ActivityRelativelayout_03"/>
+        <activity
+            android:name=".NewActivity_31"/>
+        <activity
+            android:name=".SecondActivity_08"/>
+        <activity
+            android:name=".SecondActivity_09"/>
+        <activity
+            android:name=".SecondActivity_18"/>
+
+        <service android:name=".MyService_26"
+            android:process=":SeparateProcess"/>
+
+        <service
+            android:name=".MyService_27"
+            android:process=":newService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
